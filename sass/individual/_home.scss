@@ -1,0 +1,1681 @@
+@use "../_setting" as s;
+
+body.home{
+	.mainVisual {
+		display:block;
+		position:relative;
+		height:83em;
+		@include s.media(m){
+			height:70em;
+		}
+		@include s.media(xxl){
+			height:80em;
+		}
+		&__headListBox{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			margin-left:4em;
+			@include s.media(m){
+				flex-wrap:nowrap;
+				margin-left:0;
+			}
+		}
+		li{
+			width:6.5em;
+			height:6.5em;
+			display:block;
+			background: url(../img/home/bgSquare.png) no-repeat center top;
+			background-size:100% auto;
+			text-align:center;
+			margin:0 0.25em;
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 700;
+			font-style: normal;
+			line-height:1.4;
+			padding-top:2em;
+			font-size:1em;
+			@include s.media(m){
+				width:9em;
+				height:9em;
+				font-size:1em;
+				padding-top:3em;
+				margin:0 0.5em;
+			}
+			&:nth-child(1){
+				padding-top:0.3em;
+				line-height:1.2;
+				@include s.media(m){
+					padding-top:1.5em;
+				line-height:1.4;
+				}
+			}
+			&:nth-child(2){
+				padding-top:0.7em;
+				@include s.media(m){
+					padding-top:3em;
+				}
+			}
+			&:nth-child(4){
+				padding-top:1em;
+				@include s.media(m){
+					padding-top:3em;
+				}
+			}
+			&:nth-child(5){
+				padding-top:1.8em;
+				@include s.media(m){
+					padding-top:2.3em;
+				}
+			}
+			span{
+				color:#FFF;
+			}
+			b.--type01{
+				font-size:1.2em;
+				@include s.media(m){
+					font-size:1.625em;
+				}
+			}
+			b.--type02{
+				font-size:1.1em;
+				@include s.media(m){
+					font-size:1.123em;
+				}
+			}
+			small{
+				display:block;
+			}
+		}
+		&__copy{
+			display:block;
+			position:relative;
+			padding-top:3em;
+			margin-bottom:3em;
+			@include s.media(m){
+				padding-top:4em;
+				padding-left:1em;
+				margin-bottom:1.5em;
+			}
+			&__image{
+				width:11em;
+				position:absolute;
+				top:-6em;
+				left:-4em;
+				@include s.media(m){
+					width:14em;
+					top:-5em;
+					left:-8em;
+				}
+				@include s.media(xl){
+					left:-9em;
+				}
+				img{
+					width:100%;
+				}
+				&::before{
+					content: " ";
+					width:8em;
+					height:4em;
+					display:block;
+					position:absolute;
+					top:-2em;
+					right:0;
+					background: url(../img/home/sentKuma01.png) no-repeat center top;
+					background-size:100% auto;
+					@include s.media(m){
+						content: none;
+					}
+				}
+			}
+			&__catch{
+				font-family: "Zen Maru Gothic", serif;
+				font-weight: 500;
+				font-style: normal;
+				font-size:1.8em;
+				padding-bottom:0.3em;
+				text-align:center;
+				@include s.media(m){
+					font-size:2.25em;
+					text-align:left;
+				}
+			}
+			&__sentence{
+				font-family: "Zen Maru Gothic", serif;
+				font-weight: 500;
+				font-style: normal;
+				text-align:center;
+				@include s.media(m){
+					font-size:1.125em;
+					text-align:left;
+				}
+			}
+		}
+		.scheduleTableBox{
+			width:90%;
+			background:#FFF;
+			border-radius:0.5em;
+			padding:1.5em;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:1em;
+			margin-top:44em;
+			@include s.media(m){
+				width:auto;
+				display:inline-block;
+				position:absolute;
+				top:19em;
+				right:0;
+				padding:0.7em;
+				border-radius:1em 0 0 1em;
+				margin-bottom:0;
+				margin-top:0;
+			}
+			@include s.media(xl){
+				padding:1.5em;
+			}
+		}
+		&__mainBox{
+			width:202%;
+			display:block;
+			margin-left:-50.5%;
+			position:relative;
+			@include s.media(m){
+				width:150%;
+				margin-left:-25%;
+			}
+			@include s.media(xxl){
+				width:202%;
+				margin-left:-50.5%;
+			}
+			&__button{
+				width:9em;
+				height:9em;
+				display:block;
+				position:absolute;
+				z-index:5;
+				@include s.media(m){
+					width:12.6em;
+					height:12.6em;
+				}
+				a{
+					width:9em;
+					height:9em;
+					display:block;
+					position:relative;
+					-ms-writing-mode: tb-rl;
+					writing-mode: vertical-rl;
+					background:#FFF;
+					border-radius:50%;
+					padding:1.5em 2.5em 0 0;
+					opacity:1;
+					@include s.media(m){
+						width:12.6em;
+						height:12.6em;
+						padding:3em 3.5em 0 0;
+					}
+					&::before{
+						font-size:2em;
+						position:absolute;
+						color:#FFF;
+						content: "\025c0";
+						bottom:0.7em;
+						left:-0.2em;
+						transform:rotate(-38deg);
+					}
+					&::after{
+						content: " ";
+						width:8em;
+						height:8em;
+						display:block;
+						position:absolute;
+						top:0.5em;
+						left:0.5em;
+						border-radius:50%;
+						border:dashed #DED2C8 2px;
+						@include s.media(m){
+							width:11.6em;
+							height:11.6em;
+						}
+					}
+					&:hover{
+						opacity:0.9;
+					}
+				}
+				span{
+					display:block;
+					width:3em;
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 500;
+					font-style: normal;
+					color:#000;
+					font-size:0.8em;
+					@include s.media(m){
+						font-size:1em;
+					}
+				}
+				h3{
+					display:block;
+					width:1.5em;
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 500;
+					font-style: normal;
+					font-size:1.2em;
+					@include s.media(m){
+						font-size:1.625em;
+					}
+				}
+				&.--type01{
+					top:-2em;
+					left:40%;
+					@include s.media(m){
+						top:0;
+						left:18.6%;
+					}
+					animation: yurayura01 3s ease-in-out infinite alternate;
+					h3{
+						color:s.$colorType04;
+					}
+					a{
+						padding:2em 2.5em 0 0;
+						@include s.media(m){
+							padding:3em 3.5em 0 0;
+						}
+					}
+				}
+				&.--type02{
+					top:1em;
+					left:58%;
+					@include s.media(m){
+						top:0;
+						left:40%;
+					}
+					animation: yurayura01 2.5s ease-in-out infinite alternate;
+					h3{
+						color:s.$colorType02;
+					}
+					a{
+						padding:1.5em 2.5em 0 0;
+						@include s.media(m){
+							padding:2.5em 3.5em 0 0;
+						}
+					}
+				}
+				&.--type03{
+					top:12em;
+					left:40%;
+					@include s.media(m){
+						top:2.43em;
+						left:54.4%;
+					}
+					animation: yurayura01 3.5s ease-in-out infinite alternate;
+					h3{
+						color:s.$colorType03;
+					}
+					a{
+						padding:1.5em 2.5em 0 0;
+						@include s.media(m){
+							padding:2.5em 3.5em 0 0;
+						}
+					}
+				}
+				&.--type04{
+					top:18em;
+					left:60%;
+					@include s.media(m){
+						top:0;
+						left:78.7%;
+					}
+					animation: yurayura01 3s ease-in-out infinite alternate;
+					h3{
+						color:s.$colorType05;
+					}
+					a{
+						padding:1.7em 1.9em 0 0;
+						@include s.media(m){
+							padding:2.5em 2.5em 0 0;
+						}
+					}
+					span{
+						width:4.3em;
+					}
+				}
+			}
+			&__image{
+				width:8.9em;
+				position:absolute;
+				top:33em;
+				left:35%;
+				z-index:4;
+				@include s.media(m){
+					top:-1em;
+					left:67%;
+				}
+				img{
+					width:100%;
+				}
+			}
+		}
+		&__main{
+			width:s.em(622);
+			width:28.5%;
+			height:s.em(574);
+			height:26.3%;
+			display:block;
+			position:absolute;
+			img{
+				width:100%;
+			}
+			&__imageBox{
+				width:100%;
+				height:100%;
+				display:block;
+				position:relative;
+				&.active{
+					.mainVisual__main__image::before{
+						@include s.media(m){
+							opacity:1;
+						}
+					}
+				}
+			}
+			&__image{
+				&::before{
+					content: " ";
+					width:43em;
+					height:43em;
+					display:block;
+					position:absolute;
+					top:-2em;
+					left:-1.5em;
+					background: url(../img/home/mainActive.png) no-repeat center top;
+					background-size:100% auto;
+					opacity:0;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					@include s.media(m){
+						width:32.5em;
+						height:32.5em;
+						top:-2em;
+						left:-1.5em;
+					}
+					@include s.media(xxl){
+						width:43em;
+						height:43em;
+						top:-2em;
+						left:-1.5em;
+					}
+				}
+			}
+			&.--type01{
+				top:-1em;
+				left:22.8%;
+				transform:rotate(10deg);
+				@include s.media(m){
+					top:3em;
+					left:0;
+				}
+			}
+			&.--type02{
+				top:7em;
+				left:48.6%;
+				z-index:2;
+				@include s.media(m){
+					top:3em;
+					left:22.8%;
+				}
+			}
+			&.--type03{
+				top:16em;
+				left:22.8%;
+				@include s.media(m){
+					top:6em;
+					left:48.6%;
+				}
+			}
+			&.--type04{
+				top:22em;
+				left:48.6%;
+				z-index:2;
+				transform:rotate(-8deg);
+				@include s.media(m){
+					top:3em;
+					left:72.3%;
+				}
+			}
+		}
+	}
+}
+
+@keyframes yurayura01 {
+    0% { transform:translateY( 10px); }
+  100% { transform:translateY( 0px); }
+}
+@keyframes yurayura02 {
+    0% { transform:translateY( 7px); }
+  100% { transform:translateY( 0px); }
+}
+@keyframes yurayura03 {
+    0% { transform:translateY( 15px); }
+  100% { transform:translateY( 0px); }
+}
+@keyframes yurayura04 {
+    0% { transform:translateY( 12px); }
+  100% { transform:translateY( 0px); }
+}
+
+#wrapper .homeNewsBox{
+	display:block;
+	position:relative;
+	border: dashed #9D8F8F 3px;
+	border-radius:1em;
+	padding:1.5em 1.5em 1.5em;
+	margin-bottom:6em;
+	@include s.media(m){
+		border-radius:2.5em;
+		margin-bottom:8em;
+		padding:3em 4em 1.5em;
+	}
+	&.--typeArchive{
+		margin-bottom:0;
+		border: dashed #e5ded3 3px;
+		background:#FFF;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		padding:1em 1.5em;
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1.24em;
+			padding:1.5em 2em;
+			margin-bottom:1em;
+		}
+		a{
+			line-height:1.7em;
+			display:block;
+			span{
+				&:nth-child(1){
+					display:inline-block;
+					margin-right:1em;
+				}
+			}
+		}
+	}
+	&__image{
+		width:6.8em;
+		display:block;
+		position:absolute;
+		top:-3em;
+		left:-3em;
+		img{
+			width:100%;
+		}
+	}
+	&__title{
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		color:s.$colorType03;
+		font-size:1.25em;
+		position:absolute;
+		top:-2em;
+		left:3em;
+	}
+	&__inner{
+		width:100%;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		@include s.media(m){
+			//display:flex;
+			//justify-content:space-between;
+			//align-items:center;
+		}
+		p{
+			margin-bottom:1em;
+			border-bottom:#FFF solid 2px;
+			padding-bottom:0.6em;
+			@include s.media(m){
+				margin-bottom:0.8em;
+			}
+			span{
+				display:block;
+				@include s.media(m){
+					display:inline-block;
+				}
+				&:nth-child(1){
+					position:relative;
+					padding-left:1.3em;
+					&::after {
+			        		content: "";
+						width:0.8em;
+						height:3px;
+						display:block;
+						background:#F2B860;
+						position:absolute;
+						top:0.7em;
+						left:0;
+			                }
+					@include s.media(m){
+						margin-right:1em;
+					}
+				}
+			}
+			a{
+				font-size:1.1em;
+				line-height:1.7;
+				@include s.media(m){
+					font-size:1em;
+				}
+			}
+		}
+	}
+	&__button{
+		text-align:right;
+		display:block;
+		margin-top:1.5em;
+		@include s.media(m){
+			text-align:right;
+			display:block;
+		}
+		a{
+			position:relative;
+			&::after {
+	        		content: "\025b6";
+	        		margin-left: 0.5em;
+				font-size:0.8em;
+	                }
+		}
+	}
+}
+
+#wrapper .homeConsultationBox{
+	display:block;
+	background:#FFF;
+	border-radius:0 0 2em 2em;
+	padding:9em 1em 4em;
+	position:relative;
+	margin-bottom:3em;
+	@include s.media(m){
+		padding:9em 3.75em 4em;
+		margin-bottom:6em;
+	}
+	&::before{
+		content: " ";
+		width:100%;
+		height:5em;
+		background:s.$colorType01;
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		@include s.media(m){
+			height:9em;
+			top:0;
+			left:0;
+		}
+	}
+	&::after{
+		content: " ";
+		width:100%;
+		height:10em;
+		background:#FFF;
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		border-radius:100%;
+		@include s.media(m){
+			height:18em;
+			top:0;
+			left:0;
+		}
+	}
+	&__inner{
+		display:block;
+		position:relative;
+		z-index:1;
+	}
+	&__image01{
+		width:5em;
+		position:absolute;
+		top:-6em;
+		left:-2em;
+		display:none;
+		@include s.media(m){
+			width:7.25em;
+			top:-3em;
+			left:-2em;
+			display:inline-block;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__image02{
+		width:8em;
+		position:absolute;
+		bottom:-6em;
+		right:-4em;
+		@include s.media(m){
+			width:12.5em;
+			bottom:-4em;
+			right:-4em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__title{
+		display:block;
+		text-align:center;
+		margin-top:-5em;
+		margin-bottom:2em;
+		&::before{
+			content: " ";
+			width:6em;
+			height:6em;
+			display:block;
+			position:absolute;
+			top:-7em;
+			left:50%;
+			margin-left:-3em;
+			background:#FFF;
+			border-radius:50%;
+			@include s.media(m){
+				width:8em;
+				height:8em;
+				top:-8em;
+				left:50%;
+				margin-left:-4em;
+			}
+		}
+		figure{
+			width:4em;
+			height:4em;
+			display:block;
+			position:absolute;
+			top:-6em;
+			left:50%;
+			margin-left:-2em;
+			@include s.media(m){
+				width:6.1em;
+				height:6.1em;
+				top:-7em;
+				left:50%;
+				margin-left:-3.05em;
+			}
+			img{
+				width:100%;
+			}
+		}
+		h3{
+			display:inline-block;
+			position:relative;
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			&::before{
+				content: " ";
+				width:2em;
+				height:4em;
+				display:block;
+				position:absolute;
+				bottom:-2em;
+				left:-2em;
+				background: url(../img/home/imgDeco01.png) no-repeat center top;
+				background-size:100% auto;
+				@include s.media(m){
+					width:3.9em;
+					height:6.4em;
+					bottom:0;
+					left:-4em;
+				}
+			}
+			&::after{
+				content: " ";
+				width:2em;
+				height:4em;
+				display:block;
+				position:absolute;
+				bottom:-2em;
+				right:-2em;
+				background: url(../img/home/imgDeco01.png) no-repeat center top;
+				background-size:100% auto;
+				transform: scale(-1, 1);
+				@include s.media(m){
+					width:3.9em;
+					height:6.4em;
+					bottom:0;
+					right:-4em;
+				}
+			}
+			span{
+				display:block;
+				&:nth-child(1){
+					font-size:1.3em;
+					font-weight: 700;
+					@include s.media(m){
+						font-size:1.875em;
+					}
+				}
+				&:nth-child(2){
+					font-size:1.2em;
+					@include s.media(m){
+						font-size:1.5em;
+					}
+				}
+				b{
+					color:s.$colorType02;
+				}
+			}
+		}
+	}
+	&__worries{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		align-itemss:center;
+		margin:0 auto 2em;
+		@include s.media(m){
+			width:80%;
+			justify-content:center;
+		}
+		li{
+			width:50%;
+			padding:0.75em;
+			text-align:center;
+			@include s.media(m){
+				padding:1em;
+				width:25%;
+			}
+			span{
+				font-family: "Zen Maru Gothic", serif;
+				font-weight: 500;
+				font-style: normal;
+				display:block;
+				background:#D1CDCD;
+				border-radius:1em;
+				padding:0.6em 0.5em;
+				@include s.media(m){
+					font-size:1.125em;
+					background: url(../img/home/bgItem01.png) no-repeat center top;
+					border-radius:0;
+					background-size:100% auto;
+					padding:2.5em 0 3em;
+				}
+			}
+		}
+	}
+	&__button{
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-itemss:center;
+		flex-wrap:wrap;
+		@include s.media(m){
+			width:60%;
+			margin:0 auto;
+		}
+		a{
+			width:80%;
+			height:3em;
+			font-size:1.25em;
+			display:block;
+			margin:0 0.5em 1em;
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			background:#666;
+			padding:0.7em 1em 0.7em 1em;
+			border-radius:3em;
+			position:relative;
+			text-align:center;
+			color:#000;
+			line-height:1.7;
+			@include s.media(m){
+				width:14em;
+				height:3.7em;
+				padding:1em 0;
+				margin:0 1em 1em;
+			}
+			small{
+				display:block;
+				font-size:0.7em;
+			}
+			&::before {
+	        		content: "\025b6";
+	        		margin-left: 0.5em;
+				font-size:0.8em;
+				color:#FFF;
+				position:absolute;
+				top:50%;
+				right:1em;
+				margin-top:-0.8em;
+				@include s.media(m){
+					right:2em;
+				}
+	                }
+			&::after {
+	        		content: " ";
+				width:calc(100% - 0.5em);
+				height:2.5em;
+				position:absolute;
+				top:0.25em;
+				right:0.25em;
+				border-radius:2.7em;
+				border:1px dashed #FFF;
+				@include s.media(m){
+					width:13.5em;
+					height:3.2em;
+					border:2px dashed #FFF;
+				}
+	                }
+			&:nth-child(1){
+				background:#F5C370;
+				line-height:1.4;
+				height:3.7em;
+				@include s.media(m){
+					padding:0.7em 0;
+					height:3.7em;
+				}
+				&:hover{
+					background:s.$colorType03;
+				}
+				&::after {
+					height:3.2em;
+					@include s.media(m){
+						height:3.2em;
+					}
+				}
+			}
+			&:nth-child(2){
+				background:#DEA29B;
+				&:hover{
+					background:s.$colorType02;
+				}
+			}
+			&:nth-child(3){
+				background:#51D185;
+				&:hover{
+					background:#3ec876;
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeTeethBox{
+	display:block;
+	position:relative;
+	background-color: #FFF;
+	background-image: url(../img/home/bg01.png), url(../img/home/bg03.png);
+	background-position: left top, left bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto,100% auto;
+	padding:5em 0 0;
+	@include s.media(m){
+		padding:10em 0 0;
+	}
+}
+
+#wrapper .homeFeaturesBox{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	position:relative;
+	padding-bottom:1.5em;
+	@include s.media(m){
+		padding-bottom:6em;
+	}
+	&__inner{
+		width:100%;
+		padding:0 0.5em;
+		margin:0 0 2em;
+		@include s.media(m){
+			width:33.3%;
+			padding:0 1em;
+			margin:0 0 2em;
+		}
+	}
+	&__number{
+		display:block;
+		position:relative;
+		text-align:center;
+		font-size:1.25em;
+		color:#FFF;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		z-index:1;
+		margin-bottom:1.5em;
+		&::before{
+			content: " ";
+			width:2em;
+			height:2em;
+			display:block;
+			position:absolute;
+			top:-0.2em;
+			left:50%;
+			margin-left:-1em;
+			background:#DEA29B;
+			border-radius:0.3em;
+			transform: rotate(45deg);
+			z-index:-1;
+		}
+	}
+	&__image{
+		border-radius:4em;
+		overflow:hidden;
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:1.5em;
+			border-radius:6em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__lead{
+		color:s.$colorType03;
+		font-size:1.2em;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			font-size:1.25em;
+		}
+	}
+	&__sentence{
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		color:#000;
+		//font-size:0.9em;
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1em;
+			display:block;
+		}
+	}
+	&__bottomImage{
+		width:15em;
+		position:absolute;
+		bottom:0;
+		right:-17em;
+		img{
+			width:100%;
+		}
+	}
+}
+
+#wrapper .homeMedicalImage{
+	display:block;
+	//background:s.$colorType01;
+	position:relative;
+	&::before{
+		content: " ";
+		width:18em;
+		height:4.4em;
+		display:block;
+		position:absolute;
+		bottom:0;
+		left:50%;
+		margin-left:-9em;
+		background: url(../img/home/bg02.png) no-repeat center bottom;
+		background-size:100% auto;
+		@include s.media(m){
+			width:47.5em;
+			height:8.8em;
+			margin-left:-23.75em;
+		}
+	}
+	figure{
+		width:150%;
+		margin-left:-25%;
+		@include s.media(m){
+			width:100%;
+			margin-left:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+}
+
+#wrapper .homeMedicalBox{
+	display:block;
+	margin-top:-1em;
+	position:relative;
+	margin-bottom:1em;
+	@include s.media(m){
+		margin-top:-6em;
+		margin-bottom:10em;
+	}
+	&__medical{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		flex-wrap:wrap;
+		li{
+			width:49%;
+			width:100%;
+			display:block;
+			margin-bottom:1.5em;
+			@include s.media(m){
+				width:49%;
+			}
+			a{
+				width:100%;
+				background:#ED7C6F;
+				color:#FFF;
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				border-radius:1em;
+				padding:1em 0 1em 1em;
+					padding:1em 1em 1em 1em;
+				@include s.media(m){
+					padding:1em 2em 1em 2em;
+				}
+				&:hover{
+					background:s.$colorType02;
+				}
+				figure{
+					width:30%;
+						width:20%;
+					display:block;
+					position:relative;
+					z-index:1;
+					margin-right:0.5em;
+					@include s.media(m){
+						width:20%;
+						margin-right:0;
+					}
+					&::before{
+						content: " ";
+						width:100%;
+						height:100%;
+						display:block;
+						position:absolute;
+						top:0;
+						left:0;
+						border-radius:50%;
+						background: #FFF;
+						z-index:-1;
+					}
+					img{
+						width:100%;
+					}
+				}
+				h4{
+					font-size:1.2em;
+						font-size:1.5em;
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 700;
+					font-style: normal;
+					line-height: 1.7;
+					@include s.media(m){
+						font-size:1.5em;
+					}
+				}
+				p{
+					font-size:1.1em;
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 700;
+					font-style: normal;
+					margin-bottom:0.5em;
+					display:none;
+					display:block;
+					@include s.media(m){
+						font-size:1em;
+						display:block;
+					}
+				}
+				small{
+					font-size:1em;
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 500;
+					font-style: normal;
+					text-align:right;
+					display:none;
+					display:block;
+					@include s.media(m){
+						display:block;
+					}
+					&::after {
+			        		content: "\025b6";
+			        		margin-left: 0.5em;
+						font-size:0.8em;
+			                }
+				}
+			}
+		}
+	}
+	&__medicalContent{
+		width:75%;
+		display:block;
+	}
+	&__image{
+		width:7em;
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		@include s.media(m){
+			width:9.43em;
+			top:4em;
+			left:-8em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__sentence{
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1em;
+		}
+	}
+}
+
+#wrapper .homeMessageBox{
+	display:block;
+	position:relative;
+	margin-bottom:4em;
+	@include s.media(m){
+		margin-bottom:8em;
+	}
+	&__lead{
+		display:block;
+		font-size:1.3em;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		color:#000;
+		margin-bottom:1em;
+		@include s.media(m){
+			font-size:1.5em;
+		}
+	}
+	&__sentence{
+		display:block;
+		margin-bottom:2em;
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1em;
+			width:55%;
+		}
+	}
+	&__button{
+		display:block;
+		@include s.media(m){
+			width:55%;
+		}
+		a{
+			width:20em;
+			height:3.7em;
+			font-size:1.1em;
+			display:block;
+			margin:0 1em;
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			background:#F5C370;
+			padding:1em 1em 1em 0;
+			border-radius:3em;
+			position:relative;
+			text-align:center;
+			color:#000;
+			line-height:1.7;
+			@include s.media(m){
+				width:20em;
+				font-size:1.25em;
+				padding:1em 1em 1em 0;
+			}
+			&::before {
+	        		content: "\025b6";
+	        		margin-left: 0.5em;
+				font-size:0.8em;
+				color:#FFF;
+				position:absolute;
+				top:50%;
+				right:2em;
+				margin-top:-0.8em;
+	                }
+			&::after {
+	        		content: " ";
+				width:19.5em;
+				height:3.2em;
+				position:absolute;
+				top:0.25em;
+				right:0.25em;
+				border-radius:2.7em;
+				border:1px dashed #FFF;
+				@include s.media(m){
+					border:2px dashed #FFF;
+				}
+	                }
+			&:hover{
+				background:s.$colorType03;
+			}
+		}
+	}
+	&__image{
+		width:20em;
+		display:block;
+		margin:0 auto 2em;
+		@include s.media(m){
+			width:26.6em;
+			position:absolute;
+			bottom:0;
+			right:0;
+			margin:0;
+		}
+		img{
+			width:100%;
+		}
+		figcaption{
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size:1.1em;
+			@include s.media(m){
+				font-size:1.5em;
+			}
+		}
+	}
+}
+
+#wrapper .homeGuideBox{
+	display:block;
+	margin-bottom:3em;
+	@include s.media(m){
+		margin-bottom:6em;
+	}
+	&__list{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		@include s.media(m){
+			flex-wrap:nowrap;
+		}
+		li{
+			width:50%;
+			padding:0 0.5em;
+			@include s.media(m){
+				width:33.3%;
+				padding:0 1em;
+			}
+			&:nth-child(2){
+				@include s.media(m){
+					margin-top:3em;
+				}
+			}
+		}
+	}
+	&__inner{
+		display:block;
+		background:#FFF;
+		border-radius:0.5em;
+		margin-bottom:1em;
+		@include s.media(m){
+			min-height:18em;
+			background: url(../img/home/bgItem02.png) no-repeat center top;
+			background-size:100% auto;
+			margin-bottom:0;
+			padding:4em 0 0;
+		}
+	}
+	&__title{
+		display:block;
+		font-size:1.2em;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			text-align:center;
+			font-size:1.625em;
+		}
+		a{
+			padding:1em;
+			display:block;
+			@include s.media(m){
+				padding:0;
+				pointer-events:none 
+			}
+		}
+	}
+	&__innerSentence{
+		display:none;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 500;
+		font-style: normal;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			padding:0 3em;
+			display:block;
+		}
+	}
+	&__button{
+		display:none;
+		text-align:center;
+		@include s.media(m){
+			display:block;
+		}
+		a{
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			&::after {
+				content: "\025b6";
+				margin-left: 0.5em;
+				font-size:0.8em;
+			}
+		}
+	}
+}
+#wrapper .homeCrossBox{
+	display:block;
+	background: url(../img/home/bg04.png) no-repeat center bottom;
+	background-size:100% auto;
+	padding-bottom:1em;
+}
+
+#wrapper .homeBnnerBox{
+	display:block;
+	position:relative;
+	margin-bottom:3em;
+	@include s.media(m){
+		margin-bottom:6em;
+	}
+	&__title{
+		text-align:center;
+		font-size:1.2em;
+		display:block;
+		text-alidn:center;
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		position:relative;
+		padding-bottom:2.5em;
+		margin-bottom:2em;
+		@include s.media(m){
+			font-size:1.875em;
+		}
+		&::after{
+			content: " ";
+			width:16em;
+			height:2em;
+			display:block;
+			position:absolute;
+			bottom:0;
+			left:50%;
+			margin-left:-8em;
+			background: url(../img/home/titleDeco.svg) no-repeat center top;
+			background-size:100% auto;
+		}
+	}
+	&__image{
+		width:7em;
+		position:absolute;
+		top:2em;
+		right:-2em;
+		@include s.media(m){
+			width:10em;
+			top:-2em;
+			right:5em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__list{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		@include s.media(m){
+		}
+		li{
+			width:100%;
+			margin-bottom:1em;
+			@include s.media(m){
+				width:48%;
+				margin-bottom:0;
+			}
+			a{
+				display:block;
+				text-align:center;
+				opacity:1;
+				&:hover{
+					opacity:.8;
+				}
+				figure{
+					margin-bottom:0.5em;
+					@include s.media(m){
+						border-radius:1em;
+					}
+				}
+				img{
+					width:100%;
+				}
+				p{
+					font-family: "Zen Maru Gothic", serif;
+					font-weight: 700;
+					font-style: normal;
+					font-size:1.1em;
+					color:#000;
+					@include s.media(m){
+						font-size:1.25em;
+					}
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeColumnBox{
+	display:block;
+	&__inner{
+		width:112%;
+		margin-left:-6%;
+		//display:flex;
+		//justify-content:space-between;
+		@include s.media(m){
+			width:100%;
+			margin-left:0;
+		}
+	}
+	&.--typeArchive{
+		.homeColumnBox__inner{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.homeColumnBox__column{
+			width:50%;
+			padding:0 1em;
+			@include s.media(m){
+				width:33.3%;
+			}
+		}
+	}
+	&__column{
+		//width:31%;
+		display:block;
+		margin-bottom:3em;
+		a{
+			opacity:1;
+			&:hover{
+				opacity:.8;
+			}
+		}
+	}
+	&__image{
+		display:block;
+		border-radius:1em;
+		overflow:hidden;
+		margin-bottom:1em;
+		img{
+			width:100%;
+		}
+		.adjustBox::before{
+			padding-top: 76.8%;
+		}
+	}
+	&__date{
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		display:block;
+		text-align:right;
+		color:s.$colorType03;
+		margin-bottom:1em;
+	}
+	&__columnTitle{
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		display:block;
+		color:#000;
+		margin-bottom:1em;
+		font-size:1.1em;
+		line-height:1.5;
+		@include s.media(m){
+			font-size:1em;
+		}
+	}
+	&__columnSentence{
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: 700;
+		font-style: normal;
+		display:block;
+		color:#000;
+		font-size:0.9em;
+		@include s.media(m){
+			font-size:0.9em;
+		}
+	}
+}
+
+#wrapper .homeCompanyBox{
+	display:block;
+	margin-bottom:1.5em;
+	@include s.media(m){
+		margin-bottom:6em;
+	}
+	&__inner{
+		width:100%;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+		}
+	}
+	&__map{
+		margin-bottom:2em;
+		@include s.media(m){
+			margin-bottom:0;
+			width:58%;
+		}
+	}
+	&__information{
+		@include s.media(m){
+			width:39%;
+		}
+		.scheduleTableBox{
+			margin-bottom:1.5em;
+			table{
+				width:100%;
+				&::after{
+					content:"";
+					width:1px;
+					height:100%;
+					position:absolute;
+					top:0;
+					left:7.3em;
+					border-right:#C6C2C2 dotted 2px;
+				}
+			}
+		}
+	}
+	&__informationTable{
+		table{
+			position:relative;
+			th,td{
+				background-color:unset;
+				border:none;
+			}
+			tr:nth-of-type(2n+1){
+				background-color:unset;
+			}
+		}
+		table{
+			width:100%;
+			th,td{
+				padding:0.3em 1em 0.3em 0;
+				font-size:0.9em;
+				font-size:1.1em;
+				@include s.media(m){
+					font-size:1em;
+					padding:0.3em 1em;
+				}
+			}
+			th{
+				width:5em;
+				@include s.media(m){
+					width:5em;
+				}
+			}
+		}
+		 p a{
+			width:21em;
+			display:flex;
+			align-items:center;
+			background:#FFF;
+			border-radius:0.8em;
+			padding:0 0 0 2.5em;
+			margin-top:1em;
+			float:right;
+		}
+	}
+	&__instagram{
+		margin-top:1.5em;
+		display:block;
+		text-align:right;
+		a{
+			background:#FFF;
+			border-radius:0.3em;
+			padding:0.8em 0.4em 0.8em 1em;
+			vertical-align:middle;
+			span{
+				display:inline-block;
+				line-height:3em;
+				+span{
+					margin-left:0.2em;
+				}
+			}
+			img{
+				width:3em;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

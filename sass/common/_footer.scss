@@ -1,0 +1,77 @@
+@use "../_setting" as s;
+
+#footer {
+	clear: both;
+}
+
+.footer__head{
+	width:100%;
+	display:flex;
+	background:#FFF;
+	justify-content:center;
+	align-items:center;
+	padding:1.5em 0;
+	img{
+		width:100%;
+	}
+	dt{
+		width:3em;
+		margin-right:1em;
+	}
+	dd{
+		width:14em;
+	}
+}
+
+.footer__content{
+	background:#ED877C;
+	display:block;
+	padding:3em 0 1em;
+	.inBase__inner{
+		margin-bottom:4em;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		@include s.media(m){
+			justify-content:center;
+			flex-wrap:nowrap;
+			margin-bottom:6em;
+		}
+		@include s.media(xl){
+			justify-content:center;
+			margin-bottom:5em;
+		}
+	}
+}
+
+.footer__navi {
+	width:50%;
+	display:block;
+	@include s.media(m){
+		width:10em;
+		font-size:1.125em;
+	}
+	&:nth-child(3){
+		margin-top:-8.5em;
+		@include s.media(m){
+			width:13em;
+			margin-top:0;
+		}
+	}
+	li{
+		padding:0.2em 1em;
+		@include s.media(m){
+			padding:0.2em 1em;
+		}
+		a{
+			font-family: "Zen Maru Gothic", serif;
+			font-weight: 500;
+			font-style: normal;
+			color:#000;
+			text-decoration:none;
+			&:hover {
+				color:#FFF;
+			}
+		}
+	}
+}

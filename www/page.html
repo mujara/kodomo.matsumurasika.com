@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+			<nav class="globalNavi">
+				<div class="inBase"><div class="inBase__inner">
+					<div class="globalNavi__menu__main">
+						<h1 class="header__siteTitle">
+							<a href="<?php echo home_url(); ?>">
+								<dl>
+									<dt><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></dt>
+									<dd><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></dd>
+								</dl>
+								
+							</a>
+						</h1>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/about"><span><img src="img/common/gNavi01.png" alt="当院について" /></span><span>当院について</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/service"><span><img src="img/common/gNavi02.png" alt="診療メニュー" /></span><span>診療メニュー</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/staff"><span><img src="img/common/gNavi03.png" alt="院長・スタッフ紹介" /></span><span>院長・スタッフ紹介</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/access"><span><img src="img/common/gNavi04.png" alt="アクセス" /></span><span>アクセス</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/question"><span><img src="img/common/gNavi05.png" alt="よくあるご質問" /></span><span>よくあるご質問</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/clinic"><span><img src="img/common/gNavi06.png" alt="医院概要" /></span><span>医院概要</span></a></li>
+						</ul>
+					<!-- /.globalNavi__menu__main --></div>
+				<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+			<!-- /.globalNavi --></nav>
+
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<p class="globalNaviSmall__siteTitle">
+										<span><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></span>
+										<span><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></span>
+									</p>
+									<div class="globalNaviSmall__tel"><a href="tel:060000000">00-000-0000</a></div>
+									<p class="globalNaviSmall__information">
+										〒650-0015 神戸市中央区多聞通3-3-7<br>コウベセンタービル2階<br>JR神戸駅、高速神戸駅より徒歩1分
+									<!-- /.pageBottomBox__title --></p>
+									
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/about"><span><img src="img/common/gNavi01.png" alt="当院について" /></span><span>当院について</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/service"><span><img src="img/common/gNavi02.png" alt="診療メニュー" /></span><span>診療メニュー</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/staff"><span><img src="img/common/gNavi03.png" alt="院長・スタッフ紹介" /></span><span>院長・スタッフ紹介</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/access"><span><img src="img/common/gNavi04.png" alt="アクセス" /></span><span>アクセス</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/question"><span><img src="img/common/gNavi05.png" alt="よくあるご質問" /></span><span>よくあるご質問</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/clinic"><span><img src="img/common/gNavi06.png" alt="医院概要" /></span><span>医院概要</span></a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+	<!-- /#header --></header>
+    
+    
+	<div class="pageTitleBox">
+		<div class="pageTitle">
+			<div class="inBase"><div class="inBase__inner">
+				<figure><img src="img/common/bgPageTitle.jpg" alt="神戸っこ小児医科・矯正歯科診療室" /></figure>
+				<h1>見出しが入ります。見出しが入ります。</h1>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.pageTitle --></div>
+	<!-- /.pageTitleBox --></div>
+	
+	<div id="contents" class="clearfix">
+		<div class="topicpathBox sM">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+					    <li><a href="index.html">ホーム</a></li>
+					    <li>タイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase"><div class="inBase__inner clearfix">
+
+
+			<div class="article">
+				<h2>見出しが入ります。見出しが入ります。</h2>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<h3>見出し3が入りますテキストテキストテキストテキストテキスト</h3>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<h4>見出し4が入りますテキストテキストテキストテキストテキスト</h4>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<h5>見出し5が入りますテキストテキストテキストテキストテキスト</h5>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+					<ul>
+						<li>ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。</li>
+						<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+						<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+					</ul>
+
+					<ol>
+						<li>OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。</li>
+						<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+						<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+					</ol>
+
+					<table>
+						<tr>
+							<th>テキスト</th>
+							<td>テキストテキスト</td>
+						</tr>
+						<tr>
+							<th>テキストテキスト</th>
+							<td>テキストテキストテキスト</td>
+						</tr>
+						<tr>
+							<th>テキスト</th>
+							<td>テキストテキスト</td>
+						</tr>
+						<tr>
+							<th>テキスト</th>
+							<td>テキストテキストテキスト</td>
+						</tr>
+						
+					</table>
+					
+					<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+						<div class="wp-block-button is-style-button-style-1">
+							<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル1</a>
+						</div>
+					</div>
+
+					<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+						<div class="wp-block-button is-style-button-style-2">
+							<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル2</a>
+						</div>
+					</div>
+
+					<div class="wp-block-cocoon-blocks-caption-box-1 caption-box block-box not-nested-style cocoon-block-caption-box">
+						<div class="caption-box-label block-box-label box-label">
+							<span class="caption-box-label-text block-box-label-text box-label-text">見出し付きテキスト枠</span>
+						</div>
+						<div class="caption-box-content block-box-content box-content">
+							<p>ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります。</p>
+						</div>
+					</div>
+
+					<p class="is-style-paragraph-style-1">段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線段落スタイル破線</p>
+
+					<p class="is-style-paragraph-style-2">段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ</p>
+
+			<!-- /.article --></div>
+
+
+
+
+				<div class="homeColumnBox --typeArchive">
+					<div class="homeColumnBox__inner">
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+
+
+					<!-- /.homeColumnBox__inner --></div>
+				<!-- /.homeColumnBox --></div>
+
+
+				<div class="homeNewsBox --typeArchive">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.homeNewsBox__inner --></div>
+
+				<div class="homeNewsBox --typeArchive">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.homeNewsBox__inner --></div>
+
+
+				<div class="homeNewsBox --typeArchive">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.homeNewsBox__inner --></div>
+
+
+
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<dl class="footer__head">
+			<dt><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></dt>
+			<dd><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></dd>
+		</dl>
+		<div class="footer__content">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/about">当院について</a></li>
+					<li><a href="<?php echo home_url(); ?>/service">診療メニュー</a></li>
+				</ul>
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/price">料金</a></li>
+					<li><a href="<?php echo home_url(); ?>/staff">院長・スタッフ紹介</a></li>
+					<li><a href="<?php echo home_url(); ?>/access">アクセス</a></li>
+				</ul>
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/clinic">医院概要</a></li>
+					<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+				</ul>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+			<small class="copyright">Copyright &copy; 松村歯科. All Rights Reserved.</small>
+		<!-- /.footer__content --></div>
+	<!-- /#footer --></footer>
+
+	
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn">
+            <a class="clearfix is-notMovePage" href="tel:060000000">
+                <figure><img src="img/common/imgTel.png" alt="電話での問い合わせ" /></figure>
+                <span>0000-000-000</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="https://apo-toolboxes.stransa.co.jp/user/web/4cd1e7d05735f11b64101fa5c2f20cb7/reservations">
+                <figure><img src="img/common/imgPC.png" alt="WEB予約" /></figure>
+                <span>WEB予約</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="<?php echo home_url(); ?>/contact">
+                <figure><img src="img/common/imgMail.png" alt="メール" /></figure>
+                <span>メール</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="#wrapper">
+                <figure><img src="img/common/imgBrush.png" alt="ページ上部に戻る" /></figure>
+                <span>ページTOP</span>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

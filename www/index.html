@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+			<nav class="globalNavi">
+				<div class="inBase"><div class="inBase__inner">
+					<div class="globalNavi__menu__main">
+						<h1 class="header__siteTitle">
+							<a href="<?php echo home_url(); ?>">
+								<dl>
+									<dt><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></dt>
+									<dd><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></dd>
+								</dl>
+								
+							</a>
+						</h1>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/about"><span><img src="img/common/gNavi01.png" alt="当院について" /></span><span>当院について</span></a></li>
+							<li><a href="#" class="--noLink"><span><img src="img/common/gNavi02.png" alt="診療メニュー" /></span><span>診療メニュー</span></a>
+								<ul class="globalNavi__menu__sub">
+									<li><a href="<?php echo home_url(); ?>/precaution">予防歯科</a></li>
+									<li><a href="<?php echo home_url(); ?>/tooth-decay">虫歯治療</a></li>
+									<li><a href="<?php echo home_url(); ?>/orthodontics">小児矯正</a></li>
+									<li><a href="<?php echo home_url(); ?>/teeth-alignment">歯並び相談</a></li>
+								</ul> 
+			            			</li>
+							<li><a href="<?php echo home_url(); ?>/staff"><span><img src="img/common/gNavi03.png" alt="院長・スタッフ紹介" /></span><span>院長・スタッフ紹介</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/access"><span><img src="img/common/gNavi04.png" alt="アクセス" /></span><span>アクセス</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/question"><span><img src="img/common/gNavi05.png" alt="よくあるご質問" /></span><span>よくあるご質問</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/clinic"><span><img src="img/common/gNavi06.png" alt="医院概要" /></span><span>医院概要</span></a></li>
+						</ul>
+					<!-- /.globalNavi__menu__main --></div>
+				<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+			<!-- /.globalNavi --></nav>
+
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<p class="globalNaviSmall__siteTitle">
+										<span><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></span>
+										<span><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></span>
+									</p>
+									<div class="globalNaviSmall__tel"><a href="tel:0783611833">078-361-1833</a></div>
+									<p class="globalNaviSmall__information">
+										〒650-0015 兵庫県神戸市中央区多聞通3-3-8 河本ビル1階
+									<!-- /.pageBottomBox__title --></p>
+									
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/about"><span><img src="img/common/gNavi01.png" alt="当院について" /></span><span>当院について</span></a></li>
+										<li>
+											<div class="globalNaviSmall__item">
+												<span><img src="img/common/gNavi02.png" alt="診療メニュー" /></span>
+												<span>診療メニュー</span>
+												<div class="globalNaviSmall__subItem">
+													<a href="<?php echo home_url(); ?>/precaution">予防歯科</a>
+													<a href="<?php echo home_url(); ?>/tooth-decay">虫歯治療</a>
+													<a href="<?php echo home_url(); ?>/orthodontics">小児矯正</a>
+													<a href="<?php echo home_url(); ?>/teeth-alignment">歯並び相談</a>
+												<!-- /.globalNaviSmall__subItem --></div>
+											<!-- /.globalNaviSmall__item --></div>
+										</li>
+										<li><a href="<?php echo home_url(); ?>/staff"><span><img src="img/common/gNavi03.png" alt="院長・スタッフ紹介" /></span><span>院長・スタッフ紹介</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/access"><span><img src="img/common/gNavi04.png" alt="アクセス" /></span><span>アクセス</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/question"><span><img src="img/common/gNavi05.png" alt="よくあるご質問" /></span><span>よくあるご質問</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/clinic"><span><img src="img/common/gNavi06.png" alt="医院概要" /></span><span>医院概要</span></a></li>
+										<li class="globalNaviSmall__instagram"><a href="https://www.instagram.com/kobekko_dentalclinic?igsh=MTltMjFueWs4Y3E3bA%3D%3D&utm_source=qr" target="_blank"><span><img src="img/common/iconInstagram.png" alt="インスタグラム" /></span><span>当院のインスタグラムはこちら！</span></a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+	<!-- /#header --></header>
+    
+    <section class="mainVisual">
+
+	<div class="inBase clearfix"><div class="inBase__inner clearfix">
+		<ul class="mainVisual__headListBox">
+			<li>神戸駅<br>高速神戸駅<br><span>徒歩 <br class="hidden-pc">約<b class="--type01">2</b>分</span></li>
+			<li>女性<br class="hidden-pc">歯科医師<br><span><b class="--type01">2</b>名在籍</span></li>
+			<li><b class="--type02">保育士</b><br><span><b class="--type02">在籍</b></span></li>
+			<li><span>近隣に</span><br><b class="--type02">駐車場</b>あり</span><small>※コイン<br class="hidden-pcf">パーキング</small></li>
+			<li><span><b class="--type01">1F</b>で</span><br>バリアフリー</li>
+		</ul>
+		<div class="mainVisual__copy">
+			<figure class="mainVisual__copy__image">
+				<img src="img/home/imgKuma01.png" alt="歯磨き" class="hidden-sp" />
+				<img src="img/home/imgKuma01_sp.png" alt="歯磨き" class="hidden-pc" />
+			</figure>
+			<h2 class="mainVisual__copy__catch">神戸のやさしい歯医者さん</h2>
+			<p class="mainVisual__copy__sentence">親子で通いやすい小児専用診療室</p>
+		<!-- /.mainVisual__copy --></div>
+
+		<div class="mainVisual__mainBox">
+			<div class="mainVisual__mainBox__button --type01">
+				<a href="<?php echo home_url(); ?>/precaution" id="mainVisualButton01">
+					<span>乳歯が<br>生え始めたら</span>
+					<h3>予防歯科</h3>
+				</a>
+			<!-- /.mainVisual__mainBox01__button --></div>
+			<div class="mainVisual__mainBox__button --type02">
+				<a href="<?php echo home_url(); ?>/tooth-decay" id="mainVisualButton02">
+					<span>痛くない・<br>なるべく削らない</span>
+					<h3>虫歯治療</h3>
+				</a>
+			<!-- /.mainVisual__mainBox02__button --></div>
+			<div class="mainVisual__mainBox__button --type03">
+				<a href="<?php echo home_url(); ?>/orthodontics" id="mainVisualButton03">
+					<span>５才・６才から<br>始める</span>
+					<h3>歯並び改善</h3>
+				</a>
+			<!-- /.mainVisual__mainBox03__button --></div>
+			<div class="mainVisual__mainBox__button --type04">
+				<a href="<?php echo home_url(); ?>/teeth-alignment" id="mainVisualButton04">
+					<span>歯並び・<br>噛み合わせが<br>気になる</span>
+					<h3>歯並び相談</h3>
+				</a>
+			<!-- /.mainVisual__mainBox04__button --></div>
+
+			<svg width="0" height="0" style="position: absolute; top: 0; left: 0;">
+				<clipPath id="mainCrop01">
+					<path d="M311.243,485.251c27.376-2.965,49.853,17.443,64.231,37.094
+						c14.379,19.651,28.67,42.44,54.94,49.512c36.913,9.937,63.683-14.816,70.827-46.678c7.543-33.64,12.932-59.621,28.286-92.255
+						c11.48-24.399,29.72-53.616,43.359-76.847c36.585-62.313,59.559-132.827,45.34-201.187C604.01,86.53,546.364,21.728,465.704,4.719
+						c-41.537-8.759-85.495-4.552-126.569,6.289c-18.292,4.811-37.518,4.811-55.81,0C242.26,0.166,198.312-4.039,156.782,4.718
+						C76.122,21.727,18.477,86.529,4.258,154.889c-14.219,68.36,8.754,138.877,45.34,201.187c13.64,23.231,31.879,52.448,43.36,76.847
+						c15.355,32.633,20.744,58.615,28.286,92.255c7.144,31.862,33.914,56.615,70.827,46.677c26.271-7.071,40.56-29.86,54.94-49.511
+						C261.391,502.694,283.867,482.285,311.243,485.251"/>
+				</clipPath>
+			</svg>
+
+			<div class="mainVisual__main --type01">
+				<div class="mainVisual__main__imageBox" id="mainVisualImageBox01">
+					<div class="mainVisual__main__image"><a href="<?php echo home_url(); ?>/precaution">
+
+						<!-- スライダーここから -->
+						<div class="sliderBox--typeFullPage">
+						<!-- Slider全体のコンテナ -->
+						<div class="swiper">
+						    <!-- Sliderの内包コンテナ -->
+						    <div class="swiper-wrapper">
+						        <!-- Slideさせたいコンテンツ -->
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual01.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual05.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						    <!-- /.swiper-wrapper --></div>
+						<!-- /.swiper --></div>
+						<!-- Sliderここまで -->
+						<!-- /.sliderBox--typeFullPage01 --></div>
+						<!-- スライダーここまで -->
+
+					</a><!-- /.mainVisual__main__image --></div>
+				<!-- /.mainVisual__main__imageBox --></div>
+			<!-- /.mainVisual__main --></div>
+
+			<div class="mainVisual__main --type02">
+				<div class="mainVisual__main__imageBox" id="mainVisualImageBox02">
+					<div class="mainVisual__main__image"><a href="<?php echo home_url(); ?>/tooth-decay">
+
+						<!-- スライダーここから -->
+						<div class="sliderBox--typeFullPage">
+						<!-- Slider全体のコンテナ -->
+						<div class="swiper">
+						    <!-- Sliderの内包コンテナ -->
+						    <div class="swiper-wrapper">
+						        <!-- Slideさせたいコンテンツ -->
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual02.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual06.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual07.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						    <!-- /.swiper-wrapper --></div>
+						<!-- /.swiper --></div>
+						<!-- Sliderここまで -->
+						<!-- /.sliderBox--typeFullPage01 --></div>
+						<!-- スライダーここまで -->
+
+					</a><!-- /.mainVisual__main__image --></div>
+				<!-- /.mainVisual__main__imageBox --></div>
+			<!-- /.mainVisual__main --></div>
+
+			<div class="mainVisual__main --type03">
+				<div class="mainVisual__main__imageBox" id="mainVisualImageBox03">
+					<div class="mainVisual__main__image"><a href="<?php echo home_url(); ?>/orthodontics">
+
+						<!-- スライダーここから -->
+						<div class="sliderBox--typeFullPage">
+						<!-- Slider全体のコンテナ -->
+						<div class="swiper">
+						    <!-- Sliderの内包コンテナ -->
+						    <div class="swiper-wrapper">
+						        <!-- Slideさせたいコンテンツ -->
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual03.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual08.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual09.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						    <!-- /.swiper-wrapper --></div>
+						<!-- /.swiper --></div>
+						<!-- Sliderここまで -->
+						<!-- /.sliderBox--typeFullPage01 --></div>
+						<!-- スライダーここまで -->
+
+					</a><!-- /.mainVisual__main__image --></div>
+				<!-- /.mainVisual__main__imageBox --></div>
+			<!-- /.mainVisual__main --></div>
+
+			<div class="mainVisual__main --type04">
+				<div class="mainVisual__main__imageBox" id="mainVisualImageBox04">
+					<div class="mainVisual__main__image"><a href="<?php echo home_url(); ?>/teeth-alignment">
+
+						<!-- スライダーここから -->
+						<div class="sliderBox--typeFullPage">
+						<!-- Slider全体のコンテナ -->
+						<div class="swiper">
+						    <!-- Sliderの内包コンテナ -->
+						    <div class="swiper-wrapper">
+						        <!-- Slideさせたいコンテンツ -->
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual04.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual10.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<svg width="100%" height="100%" viewBox="0 0 622.488 574.08">
+								  <image xlink:href="img/home/mainVisual11.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainCrop01)"/>
+								</svg>
+							<!-- /.swiper-slide --></div>
+						    <!-- /.swiper-wrapper --></div>
+						<!-- /.swiper --></div>
+						<!-- Sliderここまで -->
+						<!-- /.sliderBox--typeFullPage01 --></div>
+						<!-- スライダーここまで -->
+
+					</a><!-- /.mainVisual__main__image --></div>
+				<!-- /.mainVisual__main__imageBox --></div>
+			<!-- /.mainVisual__main --></div>
+			<figure class="mainVisual__mainBox__image"><img src="img/home/imgKuma02.png" alt="くま" /><figure>
+		<!-- /.mainVisual__mainBox --></div>
+	<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+	<div class="scheduleTableBox">
+		<table>
+			<tr>
+				<th>診療時間</th>
+				<th>月</th>
+				<th>火</th>
+				<th>水</th>
+				<th>木</th>
+				<th>金</th>
+				<th>土</th>
+				<th>日</th>
+			</tr>
+			<tr>
+				<td>9:30 - 12:00</td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td>&#9651</td>
+				<td><i class="fa fa-fw icon-minus"></i></td>
+			</tr>
+			<tr>
+				<td>14:30 - 18:00</td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td><i class="fa fa-fw icon-circle"></i></td>
+				<td>&#9651</td>
+				<td><i class="fa fa-fw icon-minus"></i></td>
+			</tr>
+		</table>
+		<p class="scheduleTableBox__sentence">&#9651… 10:00-12：30、13:30-18:00　<span>休診日</span> 木日祝</p>
+	<!-- /.scheduleTableBox --></div>
+
+
+    <!-- /.mainVisual --></section>
+	
+	<div id="contents" class="clearfix">
+		<div class="inBase clearfix"><div class="inBase__inner clearfix">
+			<div class="homeNewsBox">
+				<figure class="homeNewsBox__image"><img src="img/home/imgNews.png" alt="お知らせ" /></figure>
+				<h3 class="homeNewsBox__title">お知らせ</h3>
+				<div class="homeNewsBox__inner">
+					<p><a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a></p>
+					<p><a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a></p>
+					<p><a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a></p>
+					<div class="homeNewsBox__button"><a href="<?php echo home_url(); ?>/news">お知らせ一覧へ</a></div>
+				<!-- /.homeNewsBox__inner --></div>
+			<!-- /.homeNewsBox --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeConsultationBox"><div class="homeConsultationBox__inner">
+				<figure class="homeConsultationBox__image01"><img src="img/home/imgTree01.png" alt="木" /></figure>
+				<figure class="homeConsultationBox__image02"><img src="img/home/imgKuma03.png" alt="くま" /></figure>
+				<div class="homeConsultationBox__title">
+					<figure><img src="img/common/siteLogo.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></figure>
+					<h3><span>お子さまのこのような歯のお悩みは</span>
+					<span><b>神戸で一番やさしい歯医者</b>を目指す、<br>当院へお気軽にご相談ください！</span></h3>
+				<!-- /.homeConsultationBox__title --></div>
+				<ul class="homeConsultationBox__worries">
+					<li><span>むし歯が<br>見つかった</span></li>
+					<li><span>乳歯が抜けずに<br>永久歯が生えたきた</span></li>
+					<li><span>入学前検診で矯正が<br>必要と言われた</span></li>
+					<li><span>子供がいつも口を<br>ポカンとあけている</span></li>
+					<li><span>子供の歯並びが<br>気になる</span></li>
+					<li><span>子供が歯医者嫌いで<br>困っている</span></li>
+					<li><span>お母さん達の悩み<br>が入ります</span></li>
+				</ul>
+				<div class="homeConsultationBox__button">
+					<a href="tel:060000000">TEL予約<small>松村歯科医院に繋がります</small></a>
+					<a href="https://apo-toolboxes.stransa.co.jp/user/web/4cd1e7d05735f11b64101fa5c2f20cb7/reservations">WEB予約</a>
+					<a href="https://line.me/R/ti/p/@627uhtld" target="_blank">LINE予約</a>
+				<!-- /.homeConsultationBox__inner --></div>
+			<!-- /.homeConsultationBox --></div><!-- /.homeConsultationBox --></div>
+		<!-- /.inBase --></div>
+
+		<div class="homeTeethBox">
+			<div class="inBase clearfix"><div class="inBase__inner clearfix">
+				<div class="title--type01">
+					<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+					<small>Features</small>
+					<h3>当院の特徴</h3>
+				<!-- /.title--type01 --></div>
+				<h4 class="lead--type01">
+					痛くない、怖くない<br>大切なお子様がこれからも笑顔で
+				<!-- /.lead--type01 --></h4>
+				<p class="sM-l">簡単な挨拶文が入ります簡単な挨拶文が入ります。簡単な挨拶文が入ります簡単な挨拶文が入ります。簡単な挨拶文が入ります簡単な挨拶文が入ります。簡単な挨拶文が入ります簡単な挨拶文が入ります。</p>
+				<div class="homeFeaturesBox">
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">01</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキストテキストテキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキストテキストテキテキストテキストテキストテキストテキテキストテキストテキスト</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">02</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキス</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">03</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキストテキストテキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキストテキストテキテキストテキストテキストテキストテキテキストテキストテキスト</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">04</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキストテキストテキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキストテキストテキテキストテキストテキストテキストテキテキストテキストテキスト</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">05</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキストテキストテキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキストテキストテキテキストテキストテキストテキストテキテキストテキストテキスト</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+
+					<div class="homeFeaturesBox__inner">
+						<span class="homeFeaturesBox__number">06</span>
+						<figure class="homeFeaturesBox__image"><img src="img/home/image01.jpg" alt="当院の特徴" /></figure>
+						<p class="homeFeaturesBox__lead">テキストテキストテキストテキストテキスト</p>
+						<p class="homeFeaturesBox__sentence">テキストテキストテキストテキストテキテキストテキストテキストテキストテキテキストテキストテキスト</p>
+					<!-- /.homeFeaturesBox__inner --></div>
+					
+					<figure class="homeFeaturesBox__bottomImage"><img src="img/home/imgTree02.png" alt="木" /></figure>
+				<!-- /.homeFeaturesBox --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+			<div class="homeMedicalImage"><figure><img src="img/home/bgMedical.jpg" alt="当院の治療" /></figure></div>
+
+			<div class="inBase clearfix"><div class="inBase__inner clearfix">
+				<div class="homeMedicalBox">
+					<div class="title--type01">
+						<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+						<small>Medical</small>
+						<h3>当院の治療</h3>
+					<!-- /.title--type01 --></div>
+					<p class="homeMedicalBox__sentence sM">心がけていることや想いをまとめた文章を2行で完結に心がけていることや想いをまとめた文章を2行で完結に心がけていることや想いをまとめた文章を2行で完結に心がけていることや想いをまとめた文章を2行で完結に心がけていることや想いをまとめた文章を2行で完結に</p>
+					<ul class="homeMedicalBox__medical">
+						<li>
+							<a href="<?php echo home_url(); ?>/precaution">
+								<figure><img src="img/home/iconService01.png" alt="予防歯科" /></figure>
+								<div class="homeMedicalBox__medicalContent">
+									<h4>予防歯科</h4>
+									<p>テキストテキストテキストテキストテキスト</p>
+									<small>詳しく見る</small>
+								<!-- /.homeMedicalBox__medicalContent --></div>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo home_url(); ?>/tooth-decay">
+								<figure><img src="img/home/iconService02.png" alt="虫歯治療" /></figure>
+								<div class="homeMedicalBox__medicalContent">
+									<h4>虫歯治療</h4>
+									<p>テキストテキストテキストテキストテキスト</p>
+									<small>詳しく見る</small>
+								<!-- /.homeMedicalBox__medicalContent --></div>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo home_url(); ?>/orthodontics">
+								<figure><img src="img/home/iconService03.png" alt="小児矯正" /></figure>
+								<div class="homeMedicalBox__medicalContent">
+									<h4>小児矯正</h4>
+									<p>５才・6才から始める歯並び改善</p>
+									<small>詳しく見る</small>
+								<!-- /.homeMedicalBox__medicalContent --></div>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo home_url(); ?>/teeth-alignment">
+								<figure><img src="img/home/iconService04.png" alt="歯並び相談" /></figure>
+								<div class="homeMedicalBox__medicalContent">
+									<h4>歯並び相談</h4>
+									<p>歯並び・噛み合わせが気になる</p>
+									<small>詳しく見る</small>
+								<!-- /.homeMedicalBox__medicalContent --></div>
+							</a>
+						</li>
+					<!-- /.homeMedicalBox__medical --></ul>
+					<figure class="homeMedicalBox__image"><img src="img/home/imgKuma04.png" alt="くま" /></figure>
+				<!-- /.homeMedicalBox --></div>
+
+				<div class="homeMessageBox">
+					<div class="title--type02">
+						<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+						<small>Message</small>
+						<h3>ご挨拶</h3>
+					<!-- /.title--type01 --></div>
+					<figure class="homeMessageBox__image"><img src="img/home/imgDirector.png" alt="院長 松村健司" /><figcaption>院長 松村健司</figcaption></figure>
+					<h4 class="homeMessageBox__lead">大切な子ども達の健康を、<br>お父さん、お母さんと一緒に守ります。</h4>
+					<p class="homeMessageBox__sentence">想いや自分たちの使命などアンケートをもとに文章を作成。想いや自分たちの使命などアンケートをもとに文章を作成。想いや自分たちの使命などアンケートをもとに文章を作成。想いや自分たちの使命などアンケートをもとに文章を作成。想いや自分たちの使命などアンケートをもとに文章を作成。想いや自分たちの使命などアンケート</p>
+					<div class="homeMessageBox__button"><a href="#">院長・スタッフ紹介はこちらから</a></div>
+				<!-- /.homeMessageBox --></div>
+
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<!-- /.homeTeethBox --></div>
+
+
+
+		<div class="inBase clearfix"><div class="inBase__inner clearfix">
+			<div class="homeGuideBox">
+				<div class="title--type01">
+					<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+					<small>Beginner's guide</small>
+					<h3>初めてお越しいただく方へ</h3>
+				<!-- /.title--type01 --></div>
+				<p class="sM">テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキストテキスト</p>
+				<ul class="homeGuideBox__list">
+					<li>
+						<div class="homeGuideBox__inner">
+							<h4 class="homeGuideBox__title"><a href="#">料金について</a></h4>
+							<p class="homeGuideBox__innerSentence">テキストテキストテキストテキストテキストテキテキストテキストテキスト</p>
+							<div class="homeGuideBox__button"><a href="#">詳しく見る</a></div>
+						<!-- /.homeGuideBox__inner --></div>
+					</li>
+					<li>
+						<div class="homeGuideBox__inner">
+							<h4 class="homeGuideBox__title"><a href="#">よくあるご質問</a></h4>
+							<p class="homeGuideBox__innerSentence">テキストテキストテキストテキストテキストテキテキストテキストテキスト</p>
+							<div class="homeGuideBox__button"><a href="#">詳しく見る</a></div>
+						<!-- /.homeGuideBox__inner --></div>
+					</li>
+					<li>
+						<div class="homeGuideBox__inner">
+							<h4 class="homeGuideBox__title"><a href="#">アクセス</a></h4>
+							<p class="homeGuideBox__innerSentence">テキストテキストテキストテキストテキストテキテキストテキストテキスト</p>
+							<div class="homeGuideBox__button"><a href="#">詳しく見る</a></div>
+						<!-- /.homeGuideBox__inner --></div>
+					</li>
+				<ul>
+			<!-- /.homeGuideBox --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<div class="homeCrossBox">
+			<div class="inBase clearfix"><div class="inBase__inner clearfix">
+
+				<div class="homeBnnerBox">
+					<h3 class="homeBnnerBox__title">お母さん・お父さんの歯のお悩みも<br>お気軽にご相談ください！</h3>
+					<figure class="homeBnnerBox__image"><img src="img/home/imgKuma05.png" alt="くま" /></figure>
+					<ul class="homeBnnerBox__list">
+						<li><a href="https://matsumurasika.com/" target="_blank">
+							<figure><img src="img/home/imgBanner01.jpg" alt="バナー" /></figure>
+							<p>総合歯科医院<br>本院-松村歯科医院</p>
+						</a></li>
+						<li><a href="https://www.kobe-pino.com/" target="_blank">
+							<figure><img src="img/home/imgBanner02.jpg" alt="バナー" /></figure>
+							<p>審美歯科＋美容<br>分院-デュオこうべデンタルクリニックPINO</p>
+						</a></li>
+					<!-- /.homeBnnerBox__list --></ul>
+				<!-- /.homeBnnerBox --></div>
+
+				<div class="homeColumnBox">
+					<div class="title--type01">
+						<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+						<small>Column</small>
+						<h3>お子さまの歯を守るコラム</h3>
+					<!-- /.title--type01 --></div>
+					<div class="homeColumnBox__inner">
+
+
+				<!-- スライダーここから -->
+				<div class="sliderBox--typeChangeSlide">
+				<!-- Slider全体のコンテナ -->
+				<div class="swiper">
+				 <!-- Sliderの内包コンテナ -->
+				<div class="swiper-wrapper">
+					<!-- Slideさせたいコンテンツ -->
+					<div class="swiper-slide">
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+
+						<div class="homeColumnBox__column"><a href="#">
+							<figure class="homeColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/image02.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="homeColumnBox__date">2024.00.00</small>
+							<h4 class="homeColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="homeColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.homeColumnBox__column --></div>
+
+					<!-- /.swiper-slide --></div>
+
+				<!-- /.swiper-wrapper --></div>
+				<!-- ナビゲーションボタン（※省略可） -->
+				<!--<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>-->
+
+				<!-- /.swiper --></div>
+				<!-- Sliderここまで -->
+				<!-- /.sliderBox--typeChangeSlide --></div>
+				<!-- スライダーここまで -->
+
+
+
+
+					<!-- /.homeColumnBox__inner --></div>
+				<!-- /.homeColumnBox --></div>
+
+				<div class="homeCompanyBox">
+					<div class="title--type01">
+						<figure><img src="img/home/imgBrush.png" alt="歯ブラシ" /></figure>
+						<small>Company</small>
+						<h3>医院概要</h3>
+					<!-- /.title--type01 --></div>
+					<div class="homeCompanyBox__inner">
+						<div class="homeCompanyBox__map">
+							<div class="googleMapBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52496.07954200532!2d135.176437!3d34.679824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008f08b859805d%3A0x8743204c3ceacac0!2z5Yy755mC5rOV5Lq656S-5ZujIOadvuadkeatr-enkeWMu-mZog!5e0!3m2!1sja!2sjp!4v1721100639436!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<!-- /.googleMapBox --></div>
+						<!-- /.homeCompanyBox__map --></div>
+						<div class="homeCompanyBox__information">
+							<div class="scheduleTableBox">
+								<table>
+									<tr>
+										<th>診療時間</th>
+										<th>月</th>
+										<th>火</th>
+										<th>水</th>
+										<th>木</th>
+										<th>金</th>
+										<th>土</th>
+										<th>日</th>
+									</tr>
+									<tr>
+										<td>9:30 - 12:00</td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td>&#9651</td>
+										<td><i class="fa fa-fw icon-minus"></i></td>
+									</tr>
+									<tr>
+										<td>14:30 - 18:00</td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td><i class="fa fa-fw icon-circle"></i></td>
+										<td>&#9651</td>
+										<td><i class="fa fa-fw icon-minus"></i></td>
+									</tr>
+								</table>
+								<p class="scheduleTableBox__sentence">&#9651… 10:00-12：30、13:30-18:00　<span>休診日</span> 木日祝</p>
+							<!-- /.scheduleTableBox --></div>
+							<div class="homeCompanyBox__informationTable">
+								<table>
+									<tr>
+										<th>電話</th>
+										<td>078-361-1833</td>
+									</tr>
+									<tr>
+										<th>住所</th>
+										<td>〒650-0015<br>神戸市中央区多聞通3-3-7 コウベセンタービル2階</td>
+									</tr>
+									<tr>
+										<th>最寄駅</th>
+										<td>JR神戸駅、高速神戸駅より徒歩1分</td>
+									</tr>
+								</table>
+							<!-- /.homeCompanyBox__informationTable --></div>
+							<div class="homeCompanyBox__instagram"><a href="https://www.instagram.com/kobekko_dentalclinic?igsh=MTltMjFueWs4Y3E3bA%3D%3D&utm_source=qr" target="_blank"><span>当院のインスタグラムはこちら！</span><span><img src="img/common/iconInstagram.png" alt="インスタグラム" /></span></a></div>
+						<!-- /.homeCompanyBox__information --></div>
+					<!-- /.homeCompanyBox__inner --></div>
+				<!-- /.homeCompanyBox --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.homeCrossBox --></div>
+
+
+
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<dl class="footer__head">
+			<dt><img src="img/common/siteLogo.svg" alt="医療法人社団松村歯科医院" /></dt>
+			<dd><img src="img/common/siteTitle.svg" alt="神戸っこ小児医科・矯正歯科診療室" /></dd>
+		</dl>
+		<div class="footer__content">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/about">当院について</a></li>
+				</ul>
+				<ul class="footer__navi">
+					<li><a href="#" class="--noLink">診療メニュー</a></li>
+					<li><a href="<?php echo home_url(); ?>/precaution">&minus; 予防歯科</a></li>
+					<li><a href="<?php echo home_url(); ?>/tooth-decay">&minus; 虫歯治療</a></li>
+					<li><a href="<?php echo home_url(); ?>/orthodontics">&minus; 小児矯正</a></li>
+					<li><a href="<?php echo home_url(); ?>/teeth-alignment">&minus; 歯並び相談</a></li>
+				</ul>
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/staff">院長・スタッフ紹介</a></li>
+					<li><a href="<?php echo home_url(); ?>/access">アクセス</a></li>
+					<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/clinic">医院概要</a></li>
+					<li><a href="<?php echo home_url(); ?>/blog"><small>お子さまの歯を守るコラム</small></a></li>
+					<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+				</ul>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+			<small class="copyright">Copyright &copy; 松村歯科. All Rights Reserved.</small>
+		<!-- /.footer__content --></div>
+	<!-- /#footer --></footer>
+
+	
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn">
+            <a class="clearfix is-notMovePage" href="tel:0783611833">
+                <figure><img src="img/common/imgTel.png" alt="電話での問い合わせ" /></figure>
+                <span>松村歯科医院に<br>繋がります</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="https://apo-toolboxes.stransa.co.jp/user/web/4cd1e7d05735f11b64101fa5c2f20cb7/reservations">
+                <figure><img src="img/common/imgPC.png" alt="WEB予約" /></figure>
+                <span>WEB予約</span>
+            </a>
+            <a class="clearfix" href="https://line.me/R/ti/p/@627uhtld" target="_blank">
+                <figure><img src="img/common/imgLINE.png" alt="LINE予約" /></figure>
+                <span>LINE予約</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="<?php echo home_url(); ?>/contact">
+                <figure><img src="img/common/imgMail.png" alt="メール" /></figure>
+                <span>メール</span>
+            </a>
+            <a class="pageRiseButton clearfix is-notMovePage" href="#wrapper">
+                <figure><img src="img/common/imgBrush.png" alt="ページ上部に戻る" /></figure>
+                <span>ページTOP</span>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
