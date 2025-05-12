@@ -1,91 +1,90 @@
 @use "../_setting" as s;
 
 #header {
-	position: relative;
-	transition: .3s;
-	padding-top:5em;
-	@include s.media(m){
-		padding-top:0;
-	}
+  position: relative;
+  transition: 0.3s;
+  padding-top: 5em;
+  font-size: 1em;
+  @include s.media(m) {
+    padding-top: 0;
+  }
 }
 
-
-.header__siteTitle{
-	width:90%;
-	display:block;
-	padding:1em 0 1em 1em;
-	position: fixed;
-	top:0;
-	left:5%;
-	z-index:6;
-	@include s.media(m){
-		width:13.75em;
-		position:absolute;
-		top:1.5em;
-		left:50%;
-		margin-left:-6.875em;
-		text-align:center;
-		padding:0;
-		z-index:1;
-	}
-	@include s.media(xl){
-		top:1em;
-	}
-	&:before{
-		content: " ";
-		width:100%;
-		height:100%;
-		display:block;
-		position:absolute;
-		top:0;
-		left:0;
-		background:#FFF;
-		border-radius:0 0 1em 1em;
-		z-index:-1;
-		@include s.media(m){
-			content:none;
-		}
-	}
-	img{
-		width:100%;
-	}
-	a{
-		display:block;
-	}
-	dl{
-		width:100%;
-		display:flex;
-		@include s.media(m){
-			display:block;
-		}
-	}
-	dt{
-		display:block;
-		width:2.5em;
-		margin-top:-0.5em;
-		margin-right:0.5em;
-		@include s.media(m){
-			width:3.3em;
-			margin:0.3em auto 0.5em;
-		}
-	}
-	dd{
-		display:block;
-		width:16em;
-		@include s.media(m){
-			width:13.75em;
-			margin-left:auto;
-			margin-right:auto;
-		}
-	}
+.header__siteTitle {
+  width: 90%;
+  display: block;
+  padding: 1em 0 1em 1em;
+  position: fixed;
+  top: 0;
+  left: 5%;
+  z-index: 6;
+  @include s.media(m) {
+    width: 13.75em;
+    position: absolute;
+    top: 1.5em;
+    left: 50%;
+    margin-left: -6.875em;
+    text-align: center;
+    padding: 0;
+    z-index: 1;
+  }
+  @include s.media(xl) {
+    top: 1em;
+  }
+  &:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    z-index: -1;
+    @include s.media(m) {
+      content: none;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  dl {
+    width: 100%;
+    display: flex;
+    @include s.media(m) {
+      display: block;
+    }
+  }
+  dt {
+    display: block;
+    width: 2.5em;
+    margin-top: -0.5em;
+    margin-right: 0.5em;
+    @include s.media(m) {
+      width: 3.3em;
+      margin: 0.3em auto 0.5em;
+    }
+  }
+  dd {
+    display: block;
+    width: 16em;
+    @include s.media(m) {
+      width: 13.75em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
-
-#container .header__siteTitle{
-	@include s.media(m){
-		top:1em;
-	}
-	@include s.media(xl){
-		top:0.5em;
-	}
+#container .header__siteTitle {
+  @include s.media(m) {
+    top: 1em;
+  }
+  @include s.media(xl) {
+    top: 0.5em;
+  }
 }
